@@ -1,0 +1,520 @@
+:root {
+    --background-light: #F0F4F8;
+    --background-dark: #3B3C3D;
+    --primary-light: #D4EAF7;
+    --primary-dark: #00668C;
+    --accent-light: #71C4EF;
+    --accent-dark: #004C70;
+    --text-light: #FFFFFF;
+    --text-dark: #1D1C1C;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+.hero-section {
+    background-image: url('images/HeroSectionImage.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: var(--primary-light);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    color: var(--accent-light);
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+    color: var(--primary-light);
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: var(--text-dark);
+}
+
+.whiteText{
+    color:var(--text-light)
+}
+
+.cta-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: var(--primary-dark);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-light);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-dark);
+}
+
+
+/* Content section to style a basic list */
+.content-section {
+    padding: 40px 20px;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--accent-dark);
+}
+
+.content-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-section ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.content-section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-dark);
+    font-size: 1.5em;
+}
+
+
+/* Slide Section to give the slide effect to text */
+.slider{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+
+.item{
+    position: absolute;
+    width: 200px;
+    height: 220px;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-section {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center vertically */
+    background-color: #f0f0f0; /* Light background */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px; /* Add some space above the price */
+}
+
+.price-value {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--accent-dark); 
+}
+
+.price-section.free { 
+    background-color: #e0ffe0; /* A light green background for "Free" */
+}
+
+#next , #prev{
+    position: absolute;
+    top: 40%;
+    color:#fff;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 50px;
+}
+
+#next {
+    left: unset;
+    right: 50px;
+} 
+
+
+/* Card Section to make the text look like a card */
+.card {
+    background-color: var(--primary-light);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    color: var(--text-dark);
+    font-size: 1.2em;
+}
+
+.card-content h3 {
+    margin: 0;
+    color: var(--accent-light);
+    font-size: 1.5em;
+}
+
+/*   Money Guarenty back */
+.guarantee-section {
+    padding: 40px 20px;
+    background-color: var(--primary-light);
+    color: var(--text-dark);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.guarantee-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--accent-dark);
+}
+
+.guarantee-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guarantee-content img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.guarantee-content p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-dark);
+}
+
+/*  Success stories section */
+/* styles.css */
+.success-stories-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.stories-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Questions section */
+.faq-section {
+    padding: 40px 20px;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--accent-dark);
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-item {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: var(--primary-light);
+    color: var(--text-dark);
+    border: none;
+    padding: 15px;
+    text-align: right;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.faq-question:hover {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+.faq-answer {
+    display: none;
+    background-color: var(--background-light);
+    border: 1px solid var(--primary-dark);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: right;
+    font-size: 1em;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+/* Call for action Section */
+.cta-section {
+    background-color: var(--primary-light);
+    color: var(--text-light);
+    text-align: center;
+    padding: 60px 20px;
+    margin: 20px 0;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--accent-light);
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    font-size: 1.6em;
+    padding: 20px 40px;
+    max-width: 200px;
+    background-color: var(--accent-dark);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-light);
+}
+
+.price-section {
+    display: inline-block; /* Place the prices side-by-side */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.original-price {
+    text-decoration: line-through; /* Strikethrough for original price */
+    color: #888; /* Grey color for original price */
+    margin-right: 10px;
+}
+
+.discounted-price {
+    font-weight: bold;
+    color: var(--accent-dark); /* Use your accent color for prominence */
+}
+
+/* Foot note */
+.footer {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+    color: var(--text-light);
+}
+
+
+/* Contct Section */
+
+.contact-section {
+    padding: 40px 20px;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Add spacing between contact details */
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row; 
+    gap:20px;
+}
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.6em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+    
+    p {
+        font-size: 0.8em;
+    }
+
+    #next , #prev{
+        color:var(--accent-light);
+        background-color: transparent;
+    }
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message{
+        width: auto;
+    }
+    
+
+
+    
+    .hero-section {
+        height: auto; /* Remove fixed height for hero section */
+    }
+
+    .hero-content {
+        padding: 15px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .message {
+        font-size: 0.8em;
+    }
+
+    .faq-question {
+        font-size: 1em;
+    }
+
+    .faq-answer {
+        font-size: 0.8em;
+    }
+
+    .cta-section {
+        padding: 30px 10px;
+    }
+
+    .price-section {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        padding: 5px 0;
+    }
+}
