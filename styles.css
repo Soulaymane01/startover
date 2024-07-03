@@ -509,14 +509,13 @@ p {
         flex-direction: column;
     }
 
-    .stories-container {
+    .message-container {
         display: flex;
         flex-direction: column;
     }
 
-    .contact{
-        flex-direction: column;
-        gap: 0;
+    .message{
+        width: auto;
     }
     
 
