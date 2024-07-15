@@ -509,6 +509,11 @@ p {
         flex-direction: column;
     }
 
+    .contact{
+	display: flex;
+	flex-direction : column;
+    }
+
     .message-container {
         display: flex;
         flex-direction: column;
@@ -517,9 +522,6 @@ p {
     .message{
         width: auto;
     }
-    
-
-
     
     .hero-section {
         height: auto; /* Remove fixed height for hero section */
